@@ -1,0 +1,27 @@
+{
+  "s1": [
+    {
+      "kind": "text",
+      "ref": "Receipt: 2 source papers fetched, 200 OK"
+    }
+  ],
+  "s2": [
+    {
+      "kind": "image",
+      "ref": "evidence/summary-chart.svg",
+      "caption": "Word counts per section of the summary"
+    }
+  ],
+  "s3": [
+    {
+      "kind": "text",
+      "ref": "Summary: 3 findings, 142 words"
+    }
+  ],
+  "s4": [
+    {
+      "kind": "text",
+      "ref": "Sent to reviewer@example.org, 09:01"
+    }
+  ]
+}

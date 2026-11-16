@@ -1,0 +1,22 @@
+{
+  "id": "plan-demo-47",
+  "version": 1,
+  "steps": [
+    {
+      "id": "s1",
+      "action": "Fetch the two source papers"
+    },
+    {
+      "id": "s2",
+      "action": "Count words per section"
+    },
+    {
+      "id": "s3",
+      "action": "Summarise the findings"
+    },
+    {
+      "id": "s4",
+      "action": "Send the summary to the reviewer"
+    }
+  ]
+}

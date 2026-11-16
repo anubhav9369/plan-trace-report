@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trace report — plan-demo-47</title>
+<style>
+body { font-family: system-ui, sans-serif; margin: 2em auto;
+       max-width: 860px; padding: 0 1em; color: #1a1a1a; }
+.banner { padding: 1em; border-radius: 8px; font-weight: 700; }
+.banner.clean { background: #dcfce7; color: #166534; }
+.banner.bad { background: #fee2e2; color: #991b1b; }
+.meta { color: #555; margin: 0.8em 0; }
+table { border-collapse: collapse; width: 100%; margin-top: 1em; }
+th, td { border: 1px solid #ccc; padding: 0.5em; text-align: left;
+          vertical-align: top; }
+th { background: #f3f4f6; }
+.pill { padding: 0.15em 0.6em; border-radius: 999px; font-size: 0.85em;
+        font-weight: 600; }
+.pill.ok { background: #dcfce7; color: #166534; }
+.pill.warn { background: #fef3c7; color: #92400e; }
+.pill.idle { background: #e5e7eb; color: #374151; }
+figure { margin: 0.4em 0; }
+figure img { max-width: 320px; border: 1px solid #ccc; }
+figcaption { font-size: 0.85em; color: #555; }
+.text-ev { font-family: monospace; font-size: 0.9em; }
+.none { color: #999; }
+</style>
+</head>
+<body>
+<h1>Trace report — plan-demo-47</h1>
+<div class="banner bad">PROBLEMS FOUND — 1 issue(s), do not trust this run yet</div>
+<p class="meta">Outcome: completed &middot;
+5 log entries checked &middot;
+plan version <code>6c6bb0fbfcc3</code></p>
+<table>
+<tr><th>Step</th><th>Action</th><th>Status</th><th>Took</th>
+<th>Evidence</th></tr>
+<tr><td>s1</td><td>Fetch the two source papers</td><td><span class="pill ok">executed</span></td><td>12.0s</td><td><div class="text-ev">Receipt: 2 source papers fetched, 200 OK</div></td></tr><tr><td>s2</td><td>Count words per section</td><td><span class="pill ok">executed</span></td><td>19.0s</td><td><figure><img src="evidence/summary-chart.svg" alt="Word counts per section of the summary"><figcaption>Word counts per section of the summary</figcaption></figure></td></tr><tr><td>s3</td><td>Summarise the findings</td><td><span class="pill ok">executed</span></td><td>34.0s</td><td><div class="text-ev">Summary: 3 findings, 142 words</div></td></tr><tr><td>s4</td><td>Send the summary to the reviewer</td><td><span class="pill ok">executed</span></td><td>1.0s</td><td><div class="text-ev">Sent to reviewer@example.org, 09:01</div></td></tr>
+</table>
+<h2>Problems</h2>
+<ul>
+<li>entry 2: stored hash does not match its content (entry was tampered with after it was written)</li>
+</ul>
+</body>
+</html>
